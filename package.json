@@ -1,0 +1,26 @@
+{
+  "name": "siakmas",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w node_modules/materialize-css/sass/materialize.scss -o dist/css/materialize-scss --recursive",
+    "style": "node-sass -w dist/scss/style.scss -o dist/css/style --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-start/mosacc.git"
+  },
+  "author": "j-start",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/j-start/mosacc/issues"
+  },
+  "homepage": "https://github.com/j-start/mosacc#readme",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "node-sass": "^4.12.0",
+    "sass": "^1.22.10"
+  }
+}

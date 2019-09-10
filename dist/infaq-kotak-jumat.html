@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/materialize-scss/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Mosacc</title>
+</head>
+
+<body>
+
+    <div id="sidenav">
+
+        <h4>Mosacc</h4>
+
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header">Penerimaan</div>
+                <div class="collapsible-body">
+                    <ul>
+                        <li><a href="penerimaan-terikat.html">Penerimaan Terikat</a></li>
+                        <li><a href="penerimaan-tidak-terikat.html">Penerimaan Tidak Terikat</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">Pengeluaran</div>
+                <div class="collapsible-body">
+                    <ul>
+                        <li><a href="pembelian.html">Pembelian</a></li>
+                        <li><a href="beban-beban.html">Beban-beban</a></li>
+                        <li><a href="renovasi-dan-pembangunan.html">Renovasi dan Pembangunan</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">Penyesuaian</div>
+                <div class="collapsible-body">
+                    <ul>
+                        <li><a href="penyesuaian-perlengkapan.html">Penyesuaian Perlengkapan</a></li>
+                        <li><a href="renovasi-pembangunan.html">Renovasi Pembangunan</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">Laporan</div>
+                <div class="collapsible-body">
+                    <ul>
+                        <li><a href="laporan-keuangan.html">Laporan Keuangan</a></li>
+                        <li><a href="buku-besar-utama.html">Buku Besar Utama</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+    <nav id="navigation">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">Mosacc</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Masjid Jami Al-Islah</a></li>
+                <li><a href="#">iKon</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="content">
+        <div class="form">
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s4 offset-s2">
+                            <input type="text" class="datepicker" id="input-tanggal">
+                            <label for="input-tanggal">Masukkan Tanggal</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="input-nama-pemberi" type="text" class="validate">
+                            <label for="input-nama-pemberi">Masukkan Nama Pemberi</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s4 offset-s2">
+                            <input id="input-nominal" type="number" class="validate">
+                            <label for="input-nominal">Masukkan Nominal</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="input-keterangan" type="text" class="validate">
+                            <label for="input-keterangan">Masukkan Keterangan</label>
+                        </div>
+                    </div>
+                    <div class="col s4 offset-s2">
+                        <a class="waves-effect waves-light btn">button
+                            <i class="material-icons right">send</i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/materialize-css/dist/js/materialize.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

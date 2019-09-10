@@ -1,0 +1,48 @@
+#sidenav {
+    height: 100vh;
+    background-color: $secondary-color;
+    overflow: hidden;
+    width: 50px;
+    position: absolute;
+    transition: 0.5s;
+    z-index: 99;
+    color: #fff;
+
+    // padding-top: 40px;
+
+    h4 {
+        margin: 10px !important;
+    }
+
+    &:hover {
+        width: 250px;
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+        color: white;
+        background-color: $secondary-color;
+        padding-left: 30px;
+        padding: 20px;
+    }
+
+    a:hover {
+        background-color: $primary-color;
+    }
+}
+
+.nav-wrapper {
+    padding: 0 30px;
+    padding-left: 80px;
+    z-index: 1;
+}
+
+.content {
+    margin: 0;
+    padding-left: 50px;
+
+    form {
+        overflow: hidden;
+    }
+}
