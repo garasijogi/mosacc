@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w node_modules/materialize-css/sass/materialize.scss -o dist/css/materialize-scss --recursive",
-    "style": "node-sass -w dist/scss/style.scss -o dist/css/style --recursive"
+    "sass": "node-sass -w node_modules/materialize-css/sass/materialize.scss -o dist/css/materialize-scss --recursive"
   },
   "repository": {
     "type": "git",

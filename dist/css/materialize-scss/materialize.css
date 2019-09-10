@@ -6563,3 +6563,5 @@ input[type=range]::-ms-thumb {
   padding-left: 50px; }
   .content form {
     overflow: hidden; }
+  .content .table {
+    overflow-y: scroll; }
