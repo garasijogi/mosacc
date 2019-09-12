@@ -6534,13 +6534,17 @@ input[type=range]::-ms-thumb {
   height: 100vh;
   background-color: #555;
   overflow: hidden;
-  width: 50px;
+  width: 60px;
   position: absolute;
   transition: 0.5s;
   z-index: 99;
   color: #fff; }
-  #sidenav h4 {
-    margin: 10px !important; }
+  #sidenav .logo {
+    top: 20px !important; }
+    #sidenav .logo h4 {
+      margin-top: 15px !important;
+      margin-left: 80px !important;
+      font-size: 2.1rem; }
   #sidenav:hover {
     width: 250px; }
   #sidenav a {
@@ -6552,6 +6556,10 @@ input[type=range]::-ms-thumb {
     padding: 20px; }
   #sidenav a:hover {
     background-color: teal; }
+  #sidenav .collapsible-header:hover {
+    padding-left: -10px; }
+  #sidenav .collapsible-header i {
+    padding-left: -10px; }
 
 .nav-wrapper {
   padding: 0 30px;
@@ -6560,7 +6568,7 @@ input[type=range]::-ms-thumb {
 
 .content {
   margin: 0;
-  padding-left: 50px; }
+  padding-left: 60px; }
   .content form {
     overflow: hidden; }
   .content .table {
