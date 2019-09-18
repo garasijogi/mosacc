@@ -1,3 +1,8 @@
+.wrapper-sidenav {
+    position: fixed !important;
+    z-index: 117000000;
+}
+
 #sidenav {
     height: 100vh;
     background-color: $secondary-color;
@@ -62,7 +67,41 @@
         overflow: hidden;
     }
 
-    .table {
-        overflow-y: scroll;
+    .collapsible-body {
+        position: absolute;
+    }
+}
+
+.card {
+    .card-title {
+        text-shadow: #222 2px 1.5px;
+    }
+}
+
+.modal {
+    .modal-content {
+        ul {
+            li {
+                color: $secondary-color !important;
+                height: 35px;
+                transition: 0.1s;
+
+                &:hover {
+                    color: #fff !important;
+                    background-color: $primary-color;
+                }
+            }
+
+
+        }
+    }
+}
+
+.chart-wrapper {
+    padding-left: 60px;
+    padding-bottom: 30px;
+
+    #myChart {
+        height: 500px;
     }
 }
