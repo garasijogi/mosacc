@@ -6530,6 +6530,10 @@ input[type=range]::-ms-thumb {
     text-align: center;
     margin-top: 1.2rem; } }
 
+.wrapper-sidenav {
+  position: fixed !important;
+  z-index: 117000000; }
+
 #sidenav {
   height: 100vh;
   background-color: #555;
@@ -6571,5 +6575,25 @@ input[type=range]::-ms-thumb {
   padding-left: 60px; }
   .content form {
     overflow: hidden; }
-  .content .table {
-    overflow-y: scroll; }
+  .content .collapsible-body {
+    position: absolute; }
+
+.card a p {
+  color: #000; }
+
+.card .card-title {
+  text-shadow: #222 2px 1.5px; }
+
+.modal .modal-content ul li {
+  color: #555 !important;
+  height: 35px;
+  transition: 0.1s; }
+  .modal .modal-content ul li:hover {
+    color: #fff !important;
+    background-color: teal; }
+
+.chart-wrapper {
+  padding-left: 60px;
+  padding-bottom: 30px; }
+  .chart-wrapper #myChart {
+    height: 500px; }
