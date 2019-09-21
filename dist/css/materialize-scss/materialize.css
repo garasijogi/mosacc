@@ -6578,6 +6578,9 @@ input[type=range]::-ms-thumb {
   .content .collapsible-body {
     position: absolute; }
 
+.card a p {
+  color: #000; }
+
 .card .card-title {
   text-shadow: #222 2px 1.5px; }
 
