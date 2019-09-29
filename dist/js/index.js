@@ -22,6 +22,11 @@ $(document).ready(function () {
     $('.datepicker').datepicker();
 });
 
+// Select/Dropdown select
+$(document).ready(function () {
+    $('select').formSelect();
+});
+
 // Chart.js
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {

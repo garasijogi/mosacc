@@ -6530,6 +6530,9 @@ input[type=range]::-ms-thumb {
     text-align: center;
     margin-top: 1.2rem; } }
 
+.row {
+  margin-bottom: 0px !important; }
+
 .wrapper-sidenav {
   position: fixed !important;
   z-index: 117000000; }
@@ -6575,7 +6578,7 @@ input[type=range]::-ms-thumb {
   padding-left: 60px;
   position: relative; }
   .content form {
-    overflow: hidden; }
+    margin-bottom: 30px !important; }
   .content .collapsible-body {
     position: absolute; }
 

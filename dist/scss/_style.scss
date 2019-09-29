@@ -1,3 +1,7 @@
+.row {
+    margin-bottom: 0px !important;
+}
+
 .wrapper-sidenav {
     position: fixed !important;
     z-index: 117000000;
@@ -65,7 +69,7 @@
     position: relative;
 
     form {
-        overflow: hidden;
+        margin-bottom: 30px !important;
     }
 
     .collapsible-body {
