@@ -6572,7 +6572,8 @@ input[type=range]::-ms-thumb {
 
 .content {
   margin: 0;
-  padding-left: 60px; }
+  padding-left: 60px;
+  position: relative; }
   .content form {
     overflow: hidden; }
   .content .collapsible-body {
@@ -6597,3 +6598,17 @@ input[type=range]::-ms-thumb {
   padding-bottom: 30px; }
   .chart-wrapper #myChart {
     height: 500px; }
+
+.breadcrumb-wrapper {
+  position: relative;
+  margin-left: 24px;
+  height: 50px; }
+  .breadcrumb-wrapper .breadcrumb {
+    display: flex !important;
+    color: teal !important;
+    align-items: center; }
+    .breadcrumb-wrapper .breadcrumb::before {
+      color: teal !important; }
+    .breadcrumb-wrapper .breadcrumb:last-child {
+      font-weight: bolder !important;
+      color: #006767 !important; }
