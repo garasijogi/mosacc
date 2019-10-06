@@ -139,3 +139,93 @@
 
     }
 }
+
+#landing-page-content {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../background.jpg');
+    background-size: cover;
+
+    .sidenav-trigger i {
+        color: #fff;
+    }
+
+    .landing-content {
+        text-align: center;
+
+        .landing-header {
+            height: 160px;
+            position: relative;
+            background-color: rgba($color: #000000, $alpha: 0.4);
+            color: #fff;
+
+            .landing-header-components {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        a {
+            color: rgb(95, 95, 95);
+        }
+
+        .landing-card-manager {
+            position: relative;
+            display: inline-block;
+            width: 400px;
+            height: 250px;
+            border-radius: 15px;
+            background-color: salmon;
+            margin: 20px;
+
+            h4 {
+                margin: 0;
+            }
+        }
+
+        .landind-card-accounting {
+            position: relative;
+            display: inline-block;
+            width: 400px;
+            height: 250px;
+            border-radius: 15px;
+            background-color: snow;
+            margin: 20px;
+
+            h4 {
+                margin: 0;
+            }
+        }
+
+
+        #login-manajer {
+            border-radius: 20px;
+
+            .modal-content {
+                color: rgb(95, 95, 95);
+                padding: 15px;
+
+            }
+        }
+
+        #login-akuntan {
+            border-radius: 20px;
+
+            .modal-content {
+                padding: 15px;
+            }
+        }
+
+        .modal-footer {
+            a {
+                font-size: 1.5rem;
+                color: $secondary-color;
+            }
+        }
+    }
+}

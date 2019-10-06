@@ -27,6 +27,12 @@ $(document).ready(function () {
     $('select').formSelect();
 });
 
+// SideNav
+$(document).ready(function () {
+    $('.sidenav').sidenav();
+});
+
+
 // Chart.js
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
