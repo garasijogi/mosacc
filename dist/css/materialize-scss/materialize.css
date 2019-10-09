@@ -6672,3 +6672,79 @@ input[type=range]::-ms-thumb {
     #landing-page-content .landing-content .modal-footer a {
       font-size: 1.5rem;
       color: #555; }
+
+.profil-wrapper {
+  position: relative;
+  margin: 20px;
+  height: 100vh; }
+  .profil-wrapper header {
+    position: relative;
+    background-color: #f4f4f4;
+    color: #666; }
+    .profil-wrapper header img {
+      position: relative;
+      width: 100px;
+      height: auto; }
+    .profil-wrapper header h4 {
+      position: relative;
+      display: inline;
+      margin: 0 15px; }
+  .profil-wrapper .profil-nav {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 90vh; }
+    .profil-wrapper .profil-nav ul {
+      position: relative;
+      display: inline-block;
+      margin: 0; }
+      .profil-wrapper .profil-nav ul a {
+        top: 0 !important;
+        height: 50px;
+        width: 200px;
+        align-items: center;
+        display: flex;
+        color: #aaa;
+        padding: 10px 15px;
+        border-left: 5px solid #fff; }
+        .profil-wrapper .profil-nav ul a:hover {
+          color: teal;
+          border-left: 5px solid teal; }
+      .profil-wrapper .profil-nav ul .profil-nav-active {
+        color: teal;
+        border-left: 5px solid teal; }
+  .profil-wrapper .profil-content {
+    position: absolute;
+    display: inline-block;
+    margin-top: 0px;
+    height: 100vh;
+    right: 0; }
+    .profil-wrapper .profil-content .profil-contents-wrapper {
+      position: relative;
+      margin: 5px 2px 50px 5px;
+      padding: 0 8px;
+      width: 48vw;
+      border-bottom: 2px solid #aaa; }
+      .profil-wrapper .profil-content .profil-contents-wrapper .head-content {
+        padding-left: 0 !important;
+        text-align: center; }
+        .profil-wrapper .profil-content .profil-contents-wrapper .head-content h4,
+        .profil-wrapper .profil-content .profil-contents-wrapper .head-content h5 {
+          margin: 5px 5px 5px 0;
+          color: #666; }
+      .profil-wrapper .profil-content .profil-contents-wrapper .header {
+        background-color: #f4f4f4;
+        color: #666;
+        height: 30px;
+        margin: 15px 0 15px -11.50px !important;
+        display: flex;
+        align-items: center; }
+        .profil-wrapper .profil-content .profil-contents-wrapper .header h5 {
+          margin: 0; }
+      .profil-wrapper .profil-content .profil-contents-wrapper .profil-properti {
+        color: #aaa;
+        border-bottom: 1px solid #d9d9d9;
+        margin: 5px 0 10px 0; }
+      .profil-wrapper .profil-content .profil-contents-wrapper .profil-nilai {
+        font-weight: bold;
+        margin-bottom: 35px; }

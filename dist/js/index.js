@@ -53,3 +53,20 @@ var chart = new Chart(ctx, {
     // Configuration options go here
     options: {}
 });
+
+// Profil Menu AJAX 
+$('document').ready(() => {
+    console.log('clicked')
+    $('.menu-trigger').click(() => {
+
+
+        let menu = $(this).attr('id');
+
+        if (menu == 'profil-masjid') {
+            $('.profil-content').load('profil-masjid.html')
+        } else if (menu == 'struktur-dkm') {
+            $('profil-content').load('struktur-dkm.html');
+        }
+    })
+
+})
