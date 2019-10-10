@@ -1,3 +1,7 @@
+// var $ = require('jquery');
+
+
+
 // Dropdown
 const dropdown = document.querySelectorAll('.dropdown-trigger');
 M.Dropdown.init(dropdown, {
@@ -69,4 +73,9 @@ $('document').ready(() => {
         }
     })
 
+})
+
+// Data Tables
+$('document').ready(() => {
+    $('#tabel-akun').DataTable();
 })
