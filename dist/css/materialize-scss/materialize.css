@@ -6725,6 +6725,8 @@ input[type=range]::-ms-thumb {
       padding: 0 8px;
       width: 48vw;
       border-bottom: 2px solid #aaa; }
+      .profil-wrapper .profil-content .profil-contents-wrapper:last-child {
+        margin-bottom: 10px; }
       .profil-wrapper .profil-content .profil-contents-wrapper .head-content {
         padding-left: 0 !important;
         text-align: center;
@@ -6745,9 +6747,40 @@ input[type=range]::-ms-thumb {
           font-style: italic;
           margin: 10px 10px; }
       .profil-wrapper .profil-content .profil-contents-wrapper .profil-properti {
+        position: relative;
         color: #aaa;
         border-bottom: 1px solid #d9d9d9;
-        margin: 5px 0 10px 0; }
+        margin: 5px 0 10px 0;
+        width: 100%;
+        display: inline-block; }
+        .profil-wrapper .profil-content .profil-contents-wrapper .profil-properti .icon-alamat-masjid,
+        .profil-wrapper .profil-content .profil-contents-wrapper .profil-properti .icon-tahun-berdiri,
+        .profil-wrapper .profil-content .profil-contents-wrapper .profil-properti .icon-telepon-sekretariat,
+        .profil-wrapper .profil-content .profil-contents-wrapper .profil-properti .icon-rekening-masjid,
+        .profil-wrapper .profil-content .profil-contents-wrapper .profil-properti .icon-luas-tanah,
+        .profil-wrapper .profil-content .profil-contents-wrapper .profil-properti .icon-ad-art,
+        .profil-wrapper .profil-content .profil-contents-wrapper .profil-properti .icon-badan-hukum,
+        .profil-wrapper .profil-content .profil-contents-wrapper .profil-properti .icon-namamasjid {
+          position: absolute;
+          display: none;
+          right: 0;
+          cursor: pointer; }
+        .profil-wrapper .profil-content .profil-contents-wrapper .profil-properti .edit-profil {
+          margin: 30px 0; }
       .profil-wrapper .profil-content .profil-contents-wrapper .profil-nilai {
         font-weight: bold;
         margin-bottom: 35px; }
+      .profil-wrapper .profil-content .profil-contents-wrapper .btn-small {
+        width: 8.8rem; }
+    .profil-wrapper .profil-content .btn-edit-profil {
+      position: relative;
+      margin-top: -40px;
+      right: 0; }
+    .profil-wrapper .profil-content .btn-success {
+      background-color: #5CB85C; }
+    .profil-wrapper .profil-content .btn-danger {
+      background-color: #D9534F; }
+    .profil-wrapper .profil-content .radio-kredit-debit {
+      margin: 5px 0; }
+      .profil-wrapper .profil-content .radio-kredit-debit p {
+        margin: 5px; }

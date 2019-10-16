@@ -308,6 +308,10 @@
             width: 48vw;
             border-bottom: 2px solid $grey-color;
 
+            &:last-child {
+                margin-bottom: 10px;
+            }
+
             .head-content {
                 padding-left: 0 !important;
                 text-align: center;
@@ -338,15 +342,70 @@
             }
 
             .profil-properti {
+                position: relative;
                 color: $grey-color;
                 border-bottom: 1px solid $grey-color-light;
                 margin: 5px 0 10px 0;
+                width: 100%;
+                display: inline-block;
+
+                // &:hover {
+
+                // }
+
+
+                .icon-alamat-masjid,
+                .icon-tahun-berdiri,
+                .icon-telepon-sekretariat,
+                .icon-rekening-masjid,
+                .icon-luas-tanah,
+                .icon-ad-art,
+                .icon-badan-hukum,
+                .icon-namamasjid {
+                    position: absolute;
+                    display: none;
+                    right: 0;
+                    cursor: pointer;
+                }
+
+                .edit-profil {
+                    margin: 30px 0;
+                }
             }
 
             .profil-nilai {
                 font-weight: bold;
                 margin-bottom: 35px;
             }
+
+            .btn-small {
+                width: 8.8rem;
+            }
+
         }
+
+        .btn-edit-profil {
+            position: relative;
+            margin-top: -40px;
+            right: 0;
+        }
+
+        .btn-success {
+            background-color: #5CB85C;
+        }
+
+        .btn-danger {
+            background-color: #D9534F;
+        }
+
+        .radio-kredit-debit {
+            margin: 5px 0;
+
+            p {
+                margin: 5px;
+            }
+        }
+
+
     }
 }

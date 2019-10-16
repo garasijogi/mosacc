@@ -26,10 +26,7 @@
         }
 
         .kuning {
-            width: 200px;
-            height: 200px;
-            background-color: yellow;
-            display: inline-block;
+            width: 50px;
         }
     </style>
 
@@ -37,8 +34,8 @@
 
 <body>
 
-    <div class="biru"></div>
-    <div class="kuning"></div>
+    <div id="coba" class="biru" data-click="pertama">pertama</div>
+    <div class="biru" data-click="kedua">keuda</div>
 
 
     <script src="../node_modules/jquery/dist/jquery.js"></script>
@@ -46,5 +43,13 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="js/index.js"></script>
 </body>
+
+<script>
+    $('.biru').on('mouseover', function () {
+        var value = $(this).attr('data-click');
+        console.log(value);
+    });
+
+</script>
 
 </html>

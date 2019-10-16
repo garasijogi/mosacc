@@ -118,23 +118,27 @@
                             </div>
                             <div class="col s12">
                                 <div class="row" id="namamasjid">
-                                    <div class="profil-properti">NAMA MASJID<span><i
-                                                class="material-icons icon-namamasjid">create</i></span></div>
-                                    <div class="profil-nilai">Masjid jami Al-Islah</div>
+                                    <div class="input-field col s12 edit-profil"> <input id="rename-nama-masjid"
+                                            type="text" class="validate" value="Masjid Jami Al-Islah"><label
+                                            for="rename-nama-masjid">Nama Masjid</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col s12">
                                 <div class="row" id="alamat-masjid">
-                                    <div class="profil-properti">ALAMAT MASJID<span><i
-                                                class="material-icons icon-alamat-masjid">create</i></span></div>
-                                    <div class="profil-nilai">Jl. Otonom RT/RW 04/01 ds. Talaga Sari</div>
+                                    <div class="input-field col s12 edit-profil"> <input id="rename-alamat-masjid"
+                                            type="text" class="validate"
+                                            value="Jl. Otonom RT/RW 04/01 ds. Talaga Sari"><label
+                                            for="rename-alamat-masjid">Alamat Masjid</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col s12">
                                 <div class="row" id="tahun-berdiri">
-                                    <div class="profil-properti">TAHUN BERDIRI<span><i
-                                                class="material-icons icon-tahun-berdiri">create</i></span></div>
-                                    <div class="profil-nilai">2019</div>
+                                    <div class="input-field col s12 edit-profil"> <input id="rename-tahun-berdiri"
+                                            type="number" class="validate" value="2019"><label
+                                            for="rename-tahun-berdiri">Tahun Berdiri</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -148,16 +152,18 @@
                             </div>
                             <div class="col s12">
                                 <div class="row" id="telepon-sekretariat">
-                                    <div class="profil-properti">NO. TELEPON SEKRETARIAT<span><i
-                                                class="material-icons icon-telepon-sekretariat">create</i></span></div>
-                                    <div class="profil-nilai">08999384629</div>
+                                    <div class="input-field col s12 edit-profil"> <input id="rename-telepon-sekretariat"
+                                            type="number" class="validate" value="08999384629"><label
+                                            for="rename-telepon-sekretariat">No. Telepon Sekretariat</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col s12">
                                 <div class="row" id="rekening-masjid">
-                                    <div class="profil-properti">REKENING MASJID<span><i
-                                                class="material-icons icon-rekening-masjid">create</i></span></div>
-                                    <div class="profil-nilai">Jl. Otonom RT/RW 04/01 ds. Talaga Sari</div>
+                                    <div class="input-field col s12 edit-profil"> <input id="rename-rekening-masjid"
+                                            type="number" class="validate" value="022033044"><label
+                                            for="rename-rekening-masjid">Rekening Masjid</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -171,30 +177,45 @@
                             </div>
                             <div class="col s12">
                                 <div class="row" id="luas-tanah">
-                                    <div class="profil-properti">LUAS TANAH<span><i
-                                                class="material-icons icon-luas-tanah">create</i></span></div>
-                                    <div class="profil-nilai">1000m*1000m</div>
+                                    <div class="input-field col s12 edit-profil"> <input id="rename-luas-tanah"
+                                            type="text" class="validate" value="1000m*1000m"><label
+                                            for="rename-luas-tanah">Luas Tanah</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col s12">
                                 <div class="row" id="ad-art">
-                                    <div class="profil-properti">AD/ART<span><i
-                                                class="material-icons icon-ad-art">create</i></span></div>
-                                    <div class="profil-nilai">*Tambahkan File</div>
+                                    <div class="file-field input-field">
+                                        <div class="btn btn-small">
+                                            <span>ad/art</span>
+                                            <input type="file">
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input class="file-path validate" type="text" placeholder="Tambahkan File">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col s12">
                                 <div class="row" id="badan-hukum">
-                                    <div class="profil-properti">BADAN HUKUM<span><i
-                                                class="material-icons icon-badan-hukum">create</i></span></div>
-                                    <div class="profil-nilai">*Tambahkan File</div>
+                                    <div class="file-field input-field">
+                                        <div class="btn btn-small">
+                                            <span>Badan Hukum</span>
+                                            <input type="file">
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input class="file-path validate" type="text" placeholder="Tambahkan File">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <a href="edit-profil-masjid.html" class="waves-effect waves-light btn btn-edit-profil">Edit
-                        Profil</a>
+                    <a href="profil-masjid.html"
+                        class="waves-effect waves-light btn btn-edit-profil btn-success">Simpan</a>
+                    <a href="profil-masjid.html"
+                        class="waves-effect waves-light btn btn-edit-profil btn-danger">Batal</a>
                 </div>
             </div>
 
