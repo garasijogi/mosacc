@@ -1,3 +1,7 @@
+// .row .col {
+//     float: none;
+// }
+
 .row {
     margin-bottom: 0px !important;
 }
@@ -405,6 +409,31 @@
                 margin: 5px;
             }
         }
+
+        .edit-aset-wrapper {
+            position: relative;
+            margin: 20px 0 60px 0;
+
+            .marbot {
+                margin-bottom: 10px;
+            }
+
+            .tabs {
+                // position: relative;
+            }
+
+            #aset-peralatan,
+            #aset-tanah,
+            #aset-bangunan {
+                // position: relative;
+                // display: block;
+                // left: 200px;
+
+                // display: inline;
+            }
+        }
+
+
 
 
     }

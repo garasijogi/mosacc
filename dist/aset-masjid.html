@@ -224,7 +224,7 @@
                                     <thead>
                                         <tr>
                                             <th>NOMOR</th>
-                                            <th>NAMA BANGUNAN</th>
+                                            <th>NAMA</th>
                                             <th>LUAS</th>
                                             <th>NILAI</th>
                                         </tr>
@@ -261,39 +261,98 @@
                         </div>
                     </div>
 
-                    <form class="col s12">
+                    <div class="row header">
+                        <h5>Tambah Aset</h5>
+                    </div>
+
+                    <div class="edit-aset-wrapper">
                         <div class="row">
-                            <div class="input-field col s4">
-                                <input type="number" class="validate" id="rename-kode-akun">
-                                <label for="rename-kode-akun">Masukkan Nomor Akun</label>
+                            <div class="col s12 marbot">
+                                <ul class="tabs">
+                                    <li class="tab col s3"><a href="#aset-peralatan">Peralatan</a></li>
+                                    <li class="tab col s3"><a href="#aset-bangunan">Bangunan</a></li>
+                                    <li class="tab col s3"><a href="#aset-tanah">Tanah</a></li>
+                                </ul>
+                            </div>
+                            <div id="aset-peralatan" class="s12">
+                                <form class="s12">
+                                    <div class="row">
+                                        <div class="input-field col s4">
+                                            <input type="text" class="validate" id="rename-nama-peralatan">
+                                            <label for="rename-nama-peralatan">Masukkan Nama Peralatan</label>
+                                        </div>
+
+                                        <div class="input-field col s4">
+                                            <input id="rename-jumlah-peralatan" type="number" class="validate">
+                                            <label for="rename-jumlah-peralatan">Masukkan Jumlah</label>
+                                        </div>
+
+                                        <div class="input-field col s4">
+                                            <input id="rename-nilai-peralatan" type="number" class="validate">
+                                            <label for="rename-nilai-peralatan">Masukkan Nilai Peralatan</label>
+                                        </div>
+                                    </div>
+                                    <div class="col s5">
+                                        <a class="waves-effect waves-light btn">Tambah Aset
+                                            <i class="material-icons right">send</i>
+                                        </a>
+                                    </div>
+                                </form>
                             </div>
 
-                            <div class="input-field col s4">
-                                <input id="rename-nama-akun" type="text" class="validate">
-                                <label for="rename-nama-akun">Masukkan Nama Akun</label>
+                            <div id="aset-bangunan" class="s12">
+                                <form class=" s12">
+                                    <div class="row">
+                                        <div class="input-field col s4">
+                                            <input type="text" class="validate" id="rename-nama-bangunan">
+                                            <label for="rename-nama-bangunan">Masukkan Nama Bangunan</label>
+                                        </div>
+
+                                        <div class="input-field col s4">
+                                            <input id="rename-luas-bangunan" type="number" class="validate">
+                                            <label for="rename-luas-bangunan">Masukkan Luas</label>
+                                        </div>
+
+                                        <div class="input-field col s4">
+                                            <input id="rename-nilai-bangunan" type="number" class="validate">
+                                            <label for="rename-nilai-bangunan">Masukkan Nilai Bangunan</label>
+                                        </div>
+                                    </div>
+                                    <div class="col s5">
+                                        <a class="waves-effect waves-light btn">Tambah Aset
+                                            <i class="material-icons right">send</i>
+                                        </a>
+                                    </div>
+                                </form>
                             </div>
 
-                            <div class="input-field col s4 radio-kredit-debit">
-                                <p>
-                                    <label>
-                                        <input type="radio" name="kredit/debit">
-                                        <span>Kredit</span>
-                                    </label>
-                                </p>
-                                <p>
-                                    <label>
-                                        <input type="radio" name="kredit/debit">
-                                        <span>Debit</span>
-                                    </label>
-                                </p>
+                            <div id="aset-tanah" class="s12">
+                                <form class=" s12">
+                                    <div class="row">
+                                        <div class="input-field col s4">
+                                            <input type="text" class="validate" id="rename-nama-tanah">
+                                            <label for="rename-nama-tanah">Masukkan Nama</label>
+                                        </div>
+
+                                        <div class="input-field col s4">
+                                            <input id="rename-luas-tanah" type="number" class="validate">
+                                            <label for="rename-luas-tanah">Masukkan Luas</label>
+                                        </div>
+
+                                        <div class="input-field col s4">
+                                            <input id="rename-nilai-tanah" type="number" class="validate">
+                                            <label for="rename-nilai-tanah">Masukkan Nilai Bangunan</label>
+                                        </div>
+                                    </div>
+                                    <div class="col s5">
+                                        <a class="waves-effect waves-light btn">Tambah Aset
+                                            <i class="material-icons right">send</i>
+                                        </a>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                        <div class="col s5 offset-s1">
-                            <a class="waves-effect waves-light btn">Tambah Akun
-                                <i class="material-icons right">send</i>
-                            </a>
-                        </div>
-                    </form>
+                    </div>
 
                 </div>
             </div>

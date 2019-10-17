@@ -36,6 +36,10 @@ $(document).ready(function () {
     $('.sidenav').sidenav();
 });
 
+// Tabs
+$(document).ready(function () {
+    $('.tabs').tabs();
+});
 
 // Chart.js
 var ctx = document.getElementById('myChart').getContext('2d');
