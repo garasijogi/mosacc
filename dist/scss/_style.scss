@@ -2,6 +2,42 @@
 //     float: none;
 // }
 
+.wizard-wrapper {
+    width: 100%;
+    background-color: $primary-color;
+
+    .collapsible {
+
+        .wizard-menu-on {
+            background-color: $primary-color !important;
+        }
+
+        .sidenav-item {
+            a {
+                position: relative;
+                cursor: pointer;
+                display: flex;
+                // height: 210px;
+                line-height: 30px;
+                padding-left: 20px !important;
+
+                span {
+                    position: relative;
+                    margin-top: 10px;
+
+                    .material-icons {
+                        // position: absolute;
+                        margin: 0 16px 0 0px;
+                    }
+                }
+
+
+            }
+        }
+
+    }
+}
+
 .row {
     margin-bottom: 0px !important;
 }
@@ -9,6 +45,22 @@
 .wrapper-sidenav {
     position: fixed !important;
     z-index: 117000000;
+}
+
+#sidenav-wizard {
+    height: 100vh;
+    background-color: $secondary-color;
+    overflow: hidden;
+    width: 220px;
+    position: absolute;
+    transition: 0.5s;
+    z-index: 99;
+    color: #fff;
+    padding-top: 50px;
+
+    .active {
+        background-color: $primary-color;
+    }
 }
 
 #sidenav {
@@ -59,12 +111,28 @@
             padding-left: -10px;
         }
     }
+
+    .sidenav-item {
+        width: 250px !important;
+    }
 }
 
 .nav-wrapper {
     padding: 0 30px;
     padding-left: 80px;
     z-index: 1;
+}
+
+.navbar-no-shadow {
+    box-shadow: none;
+}
+
+.nav-wizard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 60px;
 }
 
 .content {
@@ -79,6 +147,88 @@
     .collapsible-body {
         position: absolute;
     }
+}
+
+.content-wizard {
+    position: relative;
+    margin: 0;
+    padding: 50px 0 50px 0;
+    position: relative;
+    z-index: 3;
+
+    .form-wizard {
+        position: relative;
+        width: 700px;
+        background-color: #fff;
+        padding: 40px 30px;
+        margin-left: 500px;
+        z-index: 3;
+
+        h5,
+        h6 {
+            color: $primary-color;
+            font-weight: 500;
+        }
+    }
+
+    .form-addition {
+        background-color: rgba($color: #fff, $alpha: 0.4);
+        position: absolute;
+        z-index: 1;
+        width: 1100px;
+        height: 400px;
+        top: 0;
+        margin: 200px 0 0 200px;
+        color: #fff;
+
+        span.wizard-section-name {
+            position: relative;
+            display: inline;
+            font-size: 2.5rem;
+            margin-left: 40px;
+            top: 150px;
+            padding: 7px;
+            border: 3px solid #fff;
+            width: 270px !important;
+            height: auto;
+        }
+
+        h5.logo-sideways {
+            display: block;
+            margin-top: 0px;
+            float: right;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            font-size: 3rem;
+
+        }
+
+        .wizard-btn {
+            position: relative;
+            display: block;
+            margin: 120px 0 0 100px;
+            width: 130px;
+            height: 50px;
+            background-color: $secondary-color;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 5px;
+            font-weight: bold;
+            // border: 2px solid #fff;
+        }
+
+        .some-rectangle {
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: rgba($color: #fff, $alpha: 0.2);
+            position: relative;
+            left: 200px;
+            margin-top: 0px;
+            transform: rotate(45deg);
+        }
+    }
+
 }
 
 .card {
@@ -418,23 +568,15 @@
                 margin-bottom: 10px;
             }
 
-            .tabs {
-                // position: relative;
-            }
-
-            #aset-peralatan,
-            #aset-tanah,
-            #aset-bangunan {
-                // position: relative;
-                // display: block;
-                // left: 200px;
-
-                // display: inline;
-            }
         }
 
-
-
-
     }
+}
+
+.btn-success {
+    background-color: #5CB85C;
+}
+
+.btn-danger {
+    background-color: #D9534F;
 }
