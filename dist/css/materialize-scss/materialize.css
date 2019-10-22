@@ -6627,7 +6627,7 @@ input[type=range]::-ms-thumb {
 .content-wizard {
   position: relative;
   margin: 0;
-  padding: 50px 0 50px 0;
+  padding: 10px 0 50px 0;
   position: relative;
   z-index: 3; }
   .content-wizard .form-wizard {
@@ -6635,7 +6635,7 @@ input[type=range]::-ms-thumb {
     width: 700px;
     background-color: #fff;
     padding: 40px 30px;
-    margin-left: 500px;
+    margin: 40px 0 0 500px;
     z-index: 3; }
     .content-wizard .form-wizard h5,
     .content-wizard .form-wizard h6 {

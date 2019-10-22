@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/materialize-scss/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Mosacc</title>
+</head>
+
+<body style="background-color: teal;">
+    <div class="wizard-wrapper">
+
+        <div class="wrapper-sidenav">
+            <div id="sidenav">
+
+                <div class="collapsible-boody">
+                    <ul class="collapsible">
+                        <li class="sidenav-item">
+                            <a href="wizard-intro.html"><span><i class="material-icons">assignment</i></span>Selamat
+                                Datang</a>
+                        </li>
+                        <li class="sidenav-item">
+                            <a href="wizard-profil-masjid.html"><span><i
+                                        class="material-icons">equalizer</i></span>Profil Masjid</a></a>
+                        </li>
+                        <li class="sidenav-item">
+                            <a href="wizard-struktur-dkm.html"><span><i class="material-icons">cached</i></span>Profil
+                                DKM
+                            </a>
+                        </li>
+                        <li class="sidenav-item">
+                            <a href="wizard-aset.html"><span><i class="material-icons">class</i></span>Aset</a>
+                        </li>
+                        <li class="sidenav-item">
+                            <a href="wizard-akun.html" class="wizard-menu-on"><span><i
+                                        class="material-icons">class</i></span>Daftar
+                                Akun
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content-wizard">
+
+            <div class="form-wizard">
+                <div class="profil-content">
+                    <div class="row header">
+                        <h5>Tambah Akun</h5>
+                    </div>
+
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input type="number" class="validate" id="rename-kode-akun">
+                                <label for="rename-kode-akun">Masukkan Nomor Akun</label>
+                            </div>
+
+                            <div class="input-field col s4">
+                                <input id="rename-nama-akun" type="text" class="validate">
+                                <label for="rename-nama-akun">Masukkan Nama Akun</label>
+                            </div>
+
+                            <div class="input-field col s4 radio-kredit-debit">
+                                <p>
+                                    <label>
+                                        <input type="radio" name="kredit/debit">
+                                        <span>Kredit</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="radio" name="kredit/debit">
+                                        <span>Debit</span>
+                                    </label>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col s5 offset-s1">
+                            <a class="waves-effect waves-light btn">Tambah Akun
+                                <i class="material-icons right">send</i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="form-wizard">
+                <div class="profil-content">
+                    <div class="col s12">
+                        <div class="col s12 head-content">
+                            <h5>DAFTAR AKUN</h5>
+                            <h6>Akun-akun Akuntansi yang Digunakan pada Masjid</h6>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <table id="tabel-akun" class="display centered striped" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>KODE AKUN</th>
+                                    <th>NAMA AKUN</th>
+                                    <th>DEBIT</th>
+                                    <th>KREDIT</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <a href="landing-page.html"
+                        class="waves-effect waves-light btn btn-edit-profil btn-success">Simpan</a>
+                    <a href="landing-page.html"
+                        class="waves-effect waves-light btn btn-edit-profil btn-danger">Lewati</a>
+                </div>
+
+            </div>
+
+            <div class="form-addition">
+                <span class="wizard-section-name">Daftar Akun</span>
+                <!-- <span class="waves-effect wizard-btn">Lewati</span> -->
+                <h5 class="logo-sideways">MOSQUE<br>ACCOUNTING</h5>
+                <div class="some-rectangle"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/materialize-css/dist/js/materialize.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
