@@ -28,14 +28,26 @@
         .kuning {
             width: 50px;
         }
+
+        .container {
+            width: 40vw;
+        }
     </style>
 
 </head>
 
 <body>
 
-    <div id="coba" class="biru" data-click="pertama">pertama</div>
-    <div class="biru" data-click="kedua">keuda</div>
+    <div class="container">
+
+        <form action="#">
+            <label for="id-test1">test 1</label><input type="text" id="id-test1" class="input-target">
+            <label for="id-test2">test 1</label><input type="text" id="id-test2" class="input-target">
+            <label for="id-test3">test 1</label><input type="text" id="id-test3" class="input-target">
+            <button class="btn" onclick="test()">test</button>
+        </form>
+
+    </div>
 
 
     <script src="../node_modules/jquery/dist/jquery.js"></script>
@@ -45,11 +57,15 @@
 </body>
 
 <script>
-    $('.biru').on('mouseover', function () {
-        var value = $(this).attr('data-click');
-        console.log(value);
-    });
+    const test = () => {
+        let inputs = document.querySelectorAll('.input-target');
 
+        inputs.forEach(element => {
+            console.log(element.value)
+        });
+    }
+
+    test();
 </script>
 
 </html>

@@ -36,11 +36,11 @@
                             <a href="wizard-aset.html" class="wizard-menu-on"><span><i
                                         class="material-icons">class</i></span>Aset</a>
                         </li>
-                        <li class="sidenav-item">
+                        <!-- <li class="sidenav-item">
                             <a href="wizard-akun.html"><span><i class="material-icons">class</i></span>Daftar
                                 Akun
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
 
@@ -313,16 +313,24 @@
                         </table>
                     </div>
 
-                    <a href="wizard-akun.html"
-                        class="waves-effect waves-light btn btn-edit-profil btn-success">Simpan</a>
-                    <a href="wizard-akun.html"
-                        class="waves-effect waves-light btn btn-edit-profil btn-danger">Lewati</a>
+                    <a href="#wizard-modal-aset"
+                        class="waves-effect waves-light modal-trigger btn btn-edit-profil btn-success">Selesai</a>
+
+                    <div id="wizard-modal-aset" class="modal">
+                        <div class="modal-content">
+                            <h4>Terima Kasih</h4>
+                            <p>Silahkan buat akun untuk dapat menggunakan aplikasi.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="wizard-buat-akun.html"
+                                class="modal-close waves-effect waves-green btn-flat">Lanjut</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="form-addition">
                 <span class="wizard-section-name">Daftar Aset</span>
-                <!-- <span class="waves-effect wizard-btn">Lewati</span> -->
                 <h5 class="logo-sideways">MOSQUE<br>ACCOUNTING</h5>
                 <div class="some-rectangle"></div>
             </div>
@@ -331,7 +339,6 @@
 
         </div>
 
-    </div>
     </div>
 
     <script src="../node_modules/jquery/dist/jquery.js"></script>

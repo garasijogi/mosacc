@@ -251,14 +251,14 @@
                 color: $secondary-color !important;
                 height: 35px;
                 transition: 0.1s;
+                display: flex;
+                justify-items: center;
 
                 &:hover {
                     color: #fff !important;
                     background-color: $primary-color;
                 }
             }
-
-
         }
     }
 }
@@ -581,3 +581,4 @@
 .btn-danger {
     background-color: #D9534F;
 }
+
