@@ -170,6 +170,12 @@
             color: $primary-color;
             font-weight: 500;
         }
+
+        .wizard-introduce {
+            font-size: 1.3rem;
+            width: 30px;
+            height: 30px;
+        }
     }
 
     .form-addition {
@@ -582,3 +588,8 @@
     background-color: #D9534F;
 }
 
+.mosacc-logo {
+    margin-right: 15px;
+    height: 30px;
+    width: 30px;
+}
