@@ -6534,16 +6534,16 @@ input[type=range]::-ms-thumb {
   width: 100%;
   background-color: teal; }
   .wizard-wrapper .collapsible .wizard-menu-on {
-    background-color: teal !important; }
+    background-color: teal !important;
+    display: flex !important;
+    align-items: center; }
   .wizard-wrapper .collapsible .sidenav-item a {
     position: relative;
     cursor: pointer;
     display: flex;
-    line-height: 30px;
-    padding-left: 20px !important; }
+    line-height: 30px; }
     .wizard-wrapper .collapsible .sidenav-item a span {
-      position: relative;
-      margin-top: 10px; }
+      position: relative; }
       .wizard-wrapper .collapsible .sidenav-item a span .material-icons {
         margin: 0 16px 0 0px; }
 
@@ -6589,14 +6589,18 @@ input[type=range]::-ms-thumb {
     display: block;
     color: white;
     background-color: #555;
-    padding-left: 30px;
-    padding: 20px; }
+    padding: 20px;
+    width: 250px; }
   #sidenav a:hover {
     background-color: teal; }
-  #sidenav .collapsible-header:hover {
-    padding-left: -10px; }
-  #sidenav .collapsible-header i {
-    padding-left: -10px; }
+  #sidenav .collapsible-header {
+    align-items: center; }
+    #sidenav .collapsible-header:hover {
+      padding-left: -10px; }
+    #sidenav .collapsible-header span {
+      box-sizing: border-box; }
+    #sidenav .collapsible-header i {
+      padding-left: -10px; }
   #sidenav .sidenav-item {
     width: 250px !important; }
 
@@ -6642,9 +6646,7 @@ input[type=range]::-ms-thumb {
       color: teal;
       font-weight: 500; }
     .content-wizard .form-wizard .wizard-introduce {
-      font-size: 1.3rem;
-      width: 30px;
-      height: 30px; }
+      font-size: 1.3rem; }
   .content-wizard .form-addition {
     background-color: rgba(255, 255, 255, 0.4);
     position: absolute;
@@ -6703,7 +6705,7 @@ input[type=range]::-ms-thumb {
   height: 35px;
   transition: 0.1s;
   display: flex;
-  justify-items: center; }
+  align-items: center; }
   .modal .modal-content ul li:hover {
     color: #fff !important;
     background-color: teal; }
@@ -6910,5 +6912,12 @@ input[type=range]::-ms-thumb {
 
 .mosacc-logo {
   margin-right: 15px;
+  margin-top: 5px;
   height: 30px;
   width: 30px; }
+
+.nav-logo {
+  height: 64px;
+  width: 40px;
+  display: flex;
+  align-items: center; }
