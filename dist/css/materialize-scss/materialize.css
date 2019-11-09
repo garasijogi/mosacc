@@ -2158,6 +2158,7 @@ html {
  */
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 /**
@@ -9567,4 +9568,193 @@ input[type=range]::-ms-thumb {
 ul.dropdown-content {
   width: 110px;
   height: 604px;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src: url(../../assets/font/GoogleSans-Regular.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Google Sans';
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section#jumbotron {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: -105px;
+  position: relative;
+}
+
+section#jumbotron .jumbotron-background {
+  top: -70px;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  transform: skewY(5deg);
+  margin: 40px 0;
+  background: linear-gradient(100deg, #008080, #005050, #003030);
+  z-index: 0;
+}
+
+section#jumbotron img {
+  width: 500px;
+  z-index: 2;
+}
+
+section#jumbotron h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  z-index: 4;
+}
+
+section#jumbotron span {
+  text-decoration: underline;
+}
+
+section#about {
+  position: relative;
+  text-align: center;
+  width: 80vw;
+  left: 10vw;
+}
+
+section h2 {
+  color: #005050;
+}
+
+section#about .about-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+  margin: 0 0 70px 0;
+}
+
+section#about .about-content .about-content-description .about-content-description-head span {
+  color: #005050;
+}
+
+section#about .about-content .about-content-description .about-content-description-body span {
+  background-color: #005050;
+  color: #fff;
+}
+
+section#about .about-content .about-content-description .about-content-description-body p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+section#about .about-content .about-content-description .about-content-description-body {
+  border-left: 4px dotted #005050;
+  padding-left: 20px;
+}
+
+section#about .about-content-img img {
+  width: 550px;
+  margin-right: 50px;
+}
+
+section#contact {
+  position: relative;
+  text-align: center;
+  width: 80vw;
+  left: 10vw;
+  top: 30px;
+}
+
+section#contact p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+section#contact .contact-cards-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 0;
+  padding: 30px 0;
+}
+
+section#contact .contact-cards-wrapper .contact-card {
+  width: 30%;
+  margin: 0 20px;
+  height: 350px;
+  background-color: #005050;
+  text-align: center;
+  position: relative;
+  padding: 0 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+section#contact .contact-cards-wrapper .contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 5px 5px #666;
+}
+
+section#contact .contact-cards-wrapper .contact-card .contact-card-icon {
+  width: 150px;
+  height: 170px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #005050;
+}
+
+section#contact .contact-cards-wrapper .contact-card .contact-card-icon img {
+  width: 100px;
+}
+
+section#contact .contact-cards-wrapper .contact-card .contact-card-head,
+section#contact .contact-cards-wrapper .contact-card .contact-card-value,
+section#contact .contact-cards-wrapper .contact-card .contact-card-description {
+  color: #fff;
+  position: relative;
+}
+
+section#contact .contact-cards-wrapper .contact-card .contact-card-head {
+  font-size: 1.5rem;
+  color: #005050;
+  background-color: #fff;
+  width: 10rem;
+  margin: auto;
+}
+
+section#contact .contact-cards-wrapper .contact-card .contact-card-value {
+  top: 20px;
+  text-decoration: underline;
+}
+
+section#contact .contact-cards-wrapper .contact-card .contact-card-description {
+  top: 30px;
+}
+
+#footer {
+  margin-top: 100px;
+  width: 100vw;
+  height: 40vh;
+  background: linear-gradient(280deg, #008080, #005050, #003030);
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+}
+
+#footer a img {
+  width: 50px;
+  margin: 20px 30px;
 }
