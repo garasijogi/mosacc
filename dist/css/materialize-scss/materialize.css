@@ -9610,6 +9610,7 @@ section#jumbotron .jumbotron-background {
 section#jumbotron img {
   width: 500px;
   z-index: 2;
+  display: none;
 }
 
 section#jumbotron h1 {
@@ -9618,6 +9619,7 @@ section#jumbotron h1 {
   color: #fff;
   text-align: center;
   z-index: 4;
+  display: none;
 }
 
 section#jumbotron span {
@@ -9641,6 +9643,14 @@ section#about .about-content {
   align-items: center;
   text-align: left;
   margin: 0 0 70px 0;
+}
+
+section#about .about-content-img {
+  opacity: 0;
+}
+
+section#about .about-content .about-content-description {
+  opacity: 0;
 }
 
 section#about .about-content .about-content-description .about-content-description-head span {
@@ -9697,12 +9707,12 @@ section#contact .contact-cards-wrapper .contact-card {
   position: relative;
   padding: 0 20px;
   border-radius: 10px;
-  transition: 0.3s;
+  transition: all 0.5s;
+  opacity: 0;
 }
 
 section#contact .contact-cards-wrapper .contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 2px 5px 5px #666;
+  box-shadow: 2px 5px 10px #666;
 }
 
 section#contact .contact-cards-wrapper .contact-card .contact-card-icon {
@@ -9757,4 +9767,66 @@ section#contact .contact-cards-wrapper .contact-card .contact-card-description {
 #footer a img {
   width: 50px;
   margin: 20px 30px;
+}
+
+@keyframes atasKeBawah {
+  from {
+    opacity: 0;
+    transform: translate(0, -20px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes bawahKeAtas {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes kiriKeKanan {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes kananKeKiri {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
