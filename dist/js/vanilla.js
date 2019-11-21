@@ -6,9 +6,21 @@ window.addEventListener('load', () => {
         let linkTarget = document.querySelector('.btn-form-wrapper a');
 
 
-        forms.forEach((item) => {
-            if (item.value === '') {
-                wizardFormButton.classList.add('modal-trigger')
+
+
+        wizardFormButton.addEventListener('click', () => {
+            let ulang = forms.length;
+            let hitung = 0;
+
+            for (let i = 0; i < forms.length; i++) {
+
+                if (forms[i].value != '') {
+                    hitung += 1;
+                }
+            }
+
+            if (hitung !== ulang) {
+                wizardFormButton.classList.add('modal-trigger');
             } else {
                 wizardFormButton.classList.remove('modal-trigger');
                 if (linkTarget.classList.contains('wizard-struktur-dkm-simpan')) {
@@ -17,7 +29,9 @@ window.addEventListener('load', () => {
                     linkTarget.setAttribute('href', 'wizard-struktur-dkm.html');
                 }
             }
-        })
+
+        });
+
     }
 
     // fucntion for about us page
@@ -57,10 +71,6 @@ window.addEventListener('load', () => {
         // Create another effect with keyframes in css like 'kiriKeKanan', 'kananKeKiri', 'fadeIn' and add it on certain elements like i just made.
     }
 
-    const everyFunctionsExist = () => {
-        wizardFormChecker();
-        jumboScrollEffect();
-    }
-
-    everyFunctionsExist();
+    wizardFormChecker();
+    jumboScrollEffect();
 })
